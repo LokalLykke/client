@@ -15,7 +15,7 @@ trait WSConnector {
     println(s"Error occured")
     println(ev)
   }
-  def onMessage : Event => Unit
+  def onMessage : MessageEvent => Unit
 
   lazy val ws = connectToServer
 
